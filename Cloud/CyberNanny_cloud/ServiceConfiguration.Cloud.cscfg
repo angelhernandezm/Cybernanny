@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CyberNanny_cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="CyberNanny_webRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <!--<Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />-->
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=SomeAccountHere;AccountKey=EncryptedKey" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="myaccount@hotmail.com" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="This should be encrypted" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-03-20T23:59:59.0000000+11:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=SomeAccountHere;AccountKey=This should be encrypted" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.ActivationToken" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Refresh" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.WaitForConnectivity" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Upgrade" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.EnableDomainJoin" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainFQDN" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainControllerFQDN" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainAccountName" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainPassword" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainOU" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.Administrators" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Connect.DomainSiteName" value="" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="SomeHashHere" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

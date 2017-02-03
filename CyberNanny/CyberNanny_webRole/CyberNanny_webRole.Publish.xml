@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="https://yourdomain.cloudapp.net:0000/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="CyberNanny_webRole_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="cybernanny" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="youraccount@hotmail.com" savePWD="False" userPWD="" SelectedForPublish="True" />
+</publishData>
